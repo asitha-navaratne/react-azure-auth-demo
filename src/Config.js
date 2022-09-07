@@ -1,7 +1,6 @@
 export const config = {
-  appId: "88c8b80f-4661-45c0-b99b-5b09fa8efc7b",
+  appId: process.env.AZURE_APP_ID,
   redirectUrl: "http://localhost:3000",
   scopes: ["user.read"],
-  authority:
-    "https://login.microsoftonline.com/asithan476gmail.onmicrosoft.com",
+  authority: process.env.AZURE_AUTHORITY,
 };
